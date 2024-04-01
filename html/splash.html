@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellnessWave Shop</title>
+    <link rel="stylesheet" href="/styles/splash.css">
+    <style>
+        /* loader */
+        .loader {
+            border: 16px solid #000000;
+            border-top: 16px solid #009E3C ;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            animation: spin 2s linear infinite;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader"></div>
+    <section class="hero-section">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>WellnessWave Shop</h1>
+            <h6>At WellnessWave, we believe that access to quality healthcare and wellness resources is a fundamental human right. Through innovative programs and partnerships, we strive to empower individuals and communities to lead healthier lives. By addressing social determinants of health and promoting preventative care, we aim to reduce health disparities and foster inclusive well-being worldwide. Our initiatives are designed to be holistic, encompassing physical, mental, and social aspects of wellness. Together, let's create a world where everyone has the opportunity to thrive and enjoy optimal health.</h6>
+            <div class="sectionBorder">
+                <p class="alignLeft">Group Members:</p>
+                <ul class="alignLeft">
+                <li>Iftekhar Zaman</li>
+                <li>Syed Shah</li>
+                <li>Yomin Panwala</li>
+                <li>Md Mahdi Ahmed</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        // Redirect to home page after 4 seconds
+        setTimeout(function() {
+        window.location.href = "home.html"; }, 4000);
+        // loader
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            var loader = document.getElementById("loader");
+            window.onload = function() {
+                loader.style.display = "none";
+            };
+        });
+    </script>
+</body>
+</html>

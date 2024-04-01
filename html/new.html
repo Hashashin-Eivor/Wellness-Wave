@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom CSS file link -->
+    <link rel="stylesheet" href="/styles/nav-footer.css">
+    <link rel="stylesheet" href="/styles/page_editor.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title> Responsive Nav-bar</title>
+</head>
+<body class="">
+    <!-- Header Start-->
+    <header class="nav">
+        <!-- logo -->
+        <div class="">
+            <a href="home.html"><img src="/images/white-logo.png" alt="" height="50"></a>
+        </div>
+        <div>
+            <!-- Nav-Bar Start -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="home.html" class="nav-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a>
+                    <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                        <li class="dropdown" onmouseover="toggleDropdown(this)" onclick="toggleDropdown(this)">
+                            <div class="dropdown-container">
+                                <a href="#" class="nav-link dropbtn">Content Page <i class="fa fa-caret-down"></i></a>
+                                <div class="dropdown-content hidden"> <!-- Add 'hidden' class here -->
+                                    <a href="content_page1.html">Student 1</a>
+                                    <a href="content_page2.html">Student 2</a>
+                                    <a href="content_page3.html">Student 3</a>
+                                    <a href="content_page4.html">Student 4</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Inside the <li> for Page Editor -->
+                        <li class="dropdown" onmouseover="toggleDropdown(this)" onclick="toggleDropdown(this)">
+                            <div class="dropdown-container">
+                                <a href="#" class="nav-link dropbtn">Page Editor <i class="fa fa-caret-down"></i></a>
+                                <div class="dropdown-content hidden"> <!-- Add 'hidden' class here -->
+                                    <a href="page_editor1.html">Student 1</a>
+                                    <a href="page_editor2.html">Student 2</a>
+                                    <a href="page_editor3.html">Student 3</a>
+                                    <a href="page_editor4.html">Student 4</a>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+        <div class="">
+            <ul class="nav-icon">
+                <li><a href="checkout.html"><i class="icon fa fa-shopping-cart" style="font-size:24px"></i></a></li>
+                <li><a href="profile.html"><i class=" icon fa fa-user" style="font-size:24px"></i></a></li>
+            </ul>
+        </div>
+
+
+        </nav>
+        <!-- header End -->
+
+    </header>
+    <!-- Header End -->
+    <div class="t-mg" id="t-reach">
+        <div class="container1">
+            <h1>Iftekhar Zaman</h1>
+            <p>Role: Student 1</p>
+        </div>
+    </div>
+
+    <div>
+        <div class="container1">
+            <div><button class="reach-button"><a href="#bottom">Back to Bottom</a></button></div>
+            <h2>Completed Tasks</h2>
+            <div class="task">
+                <h3>Splash Screen</h3>
+                <p>[I have created a splash screen page for the WellnessWave Shop, featuring a hero section with a captivating background overlay. The page includes a title, a brief message about the mission and values of WellnessWave, and a list of group members involved in the project. The CSS styling enhances the visual appeal with proper layout and alignment. Additionally, I've implemented a JavaScript function to automatically redirect users to the home page after a set duration, providing a seamless transition from the splash screen to the main content.]</p>
+                <a href="/html/splash.html">Visit the Splash Screen here</a>
+            </div>
+            <div class="task">
+                <h3>Shopping Page</h3>
+                <p>[I led the creation of WellnessWave's shopping platform, employing HTML for structure, CSS for styling, and JavaScript for dynamic functionalities like cart management and payment processing. From organizing content to enhancing visual appeal, each language played a crucial role. With intuitive navigation and seamless social integration, WellnessWave offers an inviting space for users to explore holistic wellness products and embark on their wellness journey]</p>
+                <a href="/html/shop.html">Visit the Shop here</a>
+            </div>
+            <div id="bottom" class="task">
+                <h3>Content Page</h3>
+                <p>[In crafting this content page, I focused on making it easy to understand and engaging for everyone. I organized each section to cover important topics like healthy eating, exercise, stress relief, and good sleep habits. By using clear images and simple language, I aimed to help visitors learn and get inspired. I paid close attention to how everything looks and fits together to make sure it's inviting and easy to follow. Ultimately, my goal was to create a helpful resource that anyone can use to improve their health and wellbeing.]</p>
+                <a href="/html/content_page.html">Visit the Content Page here</a>
+            </div>
+        </div>
+        <div><button class="reach-button"><a href="#t-reach">Back to Top</a></button></div>
+    </div>
+    <!-- loader -->
+    <div id="loader" class="loader"></div>
+
+    <!-- Footer start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">User Profile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Best Selling</h4>
+                    <ul>
+                        <li><a href="#">Wellness Journal</a></li>
+                        <li><a href="#">Organic Tea</a></li>
+                        <li><a href="#">Plant-based Snack</a></li>
+                        <li><a href="#">Detox and Cleanse Kit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">Protein Bar</a></li>
+                        <li><a href="#">Yoga Mat</a></li>
+                        <li><a href="#">Wellness Journal</a></li>
+                        <li><a href="#">Organic Tea</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Credential Text -->
+        <div class="footer-credentials">
+        <p>© 2024 WellnessWave Shop. All rights reserved.</p>
+        </div>
+</footer>
+    <!-- footer end -->
+    <!-- js file integration -->
+    <script src="/js/nav-footer.js"></script>
+</body>
+
+</html>

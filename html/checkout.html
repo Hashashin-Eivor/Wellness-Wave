@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom CSS file link -->
+    <link rel="stylesheet" href="/styles/nav-footer.css">
+    <link rel="stylesheet" href="/styles/shop.css">
+    <link rel="stylesheet" href="/styles/checkout.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Checkout</title>
+    <style>
+        /* loader */
+        .loader {
+            border: 16px solid #000000;
+            border-top: 16px solid #009E3C ;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            animation: spin 2s linear infinite;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="">
+    <!-- Header Start-->
+    <header class="nav">
+        <!-- logo -->
+        <div class="">
+            <a href="/html/home.html"><img src="/images/white-logo.png" alt="" height="50"></a>
+        </div>
+        <div>
+            <!-- Nav-Bar Start -->
+            <nav class="navbar">
+            <ul>
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a>
+                <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                <!-- Inside the <li> for Content Page -->
+                <li class="dropdown" onmouseover="toggleDropdown(this)" onclick="toggleDropdown(this)">
+                    <div class="dropdown-container">
+                        <a href="#" class="nav-link dropbtn">Content Page <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content hidden"> <!-- Add 'hidden' class here -->
+                            <a href="content_page1.html">Student 1</a>
+                            <a href="content_page2.html">Student 2</a>
+                            <a href="content_page3.html">Student 3</a>
+                            <a href="content_page4.html">Student 4</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Inside the <li> for Page Editor -->
+                <li class="dropdown" onmouseover="toggleDropdown(this)" onclick="toggleDropdown(this)">
+                    <div class="dropdown-container">
+                        <a href="#" class="nav-link dropbtn">Page Editor <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content hidden"> <!-- Add 'hidden' class here -->
+                            <a href="page_editor1.html">Student 1</a>
+                            <a href="page_editor2.html">Student 2</a>
+                            <a href="page_editor3.html">Student 3</a>
+                            <a href="page_editor4.html">Student 4</a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="">
+            <ul class="nav-icon">
+                <li><a href="cart.html"><i class="icon fa fa-shopping-cart" style="font-size:24px"></i></a></li>
+                <li><a href="profile.html"><i class=" icon fa fa-user" style="font-size:24px"></i></a></li>
+            </ul>
+        </div>
+
+
+        </nav>
+        <!-- header End -->
+
+    </header>
+
+    <!-- loader -->
+    <div id="loader" class="loader"></div>
+    <!-- Payment Form -->
+    <div class="payment-form">
+        <h3 id="payment-details">Payment Details</h3>
+        <form>
+            <div class="">
+                <label class="labeling">Card Holder Name<span class="star">*</span></label>
+                <input type="text" placeholder="Card Holder Name" required>
+            </div>
+            <div class="">
+                <label class="labeling"> Your Card Number<span class="star" >*</span></label>
+                <input type="text" placeholder="Card Number" required>
+            </div>
+            <div class="">
+                <label class="labeling">Card Expire Date <span class="star">*</span></label>
+                <input type="text" placeholder="MM/YY" required>
+            </div>
+            <div class="">
+                <label class="labeling"> Your Card CVV <span class="star">*</span></label>
+                <input type="text" placeholder="CVV" required>
+            </div>
+            <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="payment-form">
+            <h3>Billing Address</h3>
+            <form >
+            <div class="">
+                <label class="labeling"> Your Current Address<span class="star">*</span></label>
+                <input type="text" placeholder="Street Address" required>
+            </div>
+            <div class="">
+                <label class="labeling">Your Current City<span class="star">*</span></label>
+                <input type="text" placeholder="enter current city" required>
+            </div>
+            <div class="">
+                <label class="labeling">Your Current State<span class="star">*</span></label>
+                <input type="text" placeholder=" enter current state" required>
+            </div>
+            <div class="">
+                <label class="labeling">Zip Code/Postal Code<span class="star">*</span></label>
+                <input type="text" placeholder="enter zip code" required>
+            </div class="">
+            <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="contact-form">
+            <h3>Contact Details</h3>
+            <form>
+            <div class="">
+                <label class="labeling"> Your Full Name <span class="star">*</span></label>
+                <input type="text" placeholder="enter your name" required>
+            </div>
+            <div class="">
+                <label class="labeling">Your Email Address<span class="star">*</span></label>
+            <input type="email" placeholder="enter your e-mail" required>
+            </div>
+            <div class="">
+                <label class="labeling">Your Phone Number<span class="star">*</span></label>
+                <input type="text" placeholder="enter your phone number" required>
+            </div>
+            <button type="submit">Update</button>
+            </form>
+        </div>
+                
+    
+    <!-- Basket -->
+    <div class="basket m-basket">
+        <h3 class="title">Order Summary</h3>
+        
+        <div id="basketItems"></div>
+        
+            <p class="a-right bold">Total: £<span id="total">0.00</span></p>
+
+            <input type="checkbox" id="express-delivery" name="express-delivery" />
+            <label class="font" for="express-delivery">Express Delivery</label>
+            
+            <div class="btn-flex"> 
+                <div>
+                    <button class="clear-basket" onclick="clearBasket()">Reset</button>
+                </div>      
+                <div>
+                    <button> <a href="home.html" class="button-1">Pay<a><button></button>
+                </div>  
+            </div>
+        </div>
+        
+    </div>
+    
+<div>
+    <button><a class="button-1" href="#payment-details"> Back to Top</a></button>
+</div>
+
+
+    <!-- Shop End -->
+    <!-- Footer start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">User Profile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Best Selling</h4>
+                    <ul>
+                        <li><a href="#">Wellness Journal</a></li>
+                        <li><a href="#">Organic Tea</a></li>
+                        <li><a href="#">Plant-based Snack</a></li>
+                        <li><a href="#">Detox and Cleanse Kit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">Protein Bar</a></li>
+                        <li><a href="#">Yoga Mat</a></li>
+                        <li><a href="#">Wellness Journal</a></li>
+                        <li><a href="#">Organic Tea</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Credential Text -->
+        <div class="footer-credentials">
+        <p>© 2024 WellnessWave Shop. All rights reserved.</p>
+        </div>
+</footer>
+    <!-- footer end -->
+    <!-- js file integration -->
+    <script src="/js/nav-footer.js"></script>
+    <script src="/js/shop.js"></script>
+    <script src="/js/checkout.js"></script>
+</body>
+
+</html>

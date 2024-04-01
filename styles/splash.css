@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-weight: 900;
+}
+
+.hero-section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    background-image: url('/images/splash-screen-background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; 
+    text-align: left;
+    color: #ffffff; 
+    padding: 80px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    margin-top: 180px;
+}
+
+h6{
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 50px;
+    line-height: 1.3rem;
+    margin-right: 35%;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+p, ul{
+    text-align: left;
+}
+
+li{
+    font-size: .9rem;
+    font-weight: 100;
+
+}
+
+.sectionBorder{
+    border: solid .2rem;
+    border-color: #fff;
+    padding-left:30px;
+    padding-right: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 200px;
+    margin-top: 70px
+}
+
+.custom-loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.custom-loader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, transparent 50%, #766DF4 50%);
+    background-size: 200% 100%;
+    animation: slide 1s infinite linear;
+}
+
+@keyframes slide {
+    100% {
+    background-position: -100% 0;
+    }
+}

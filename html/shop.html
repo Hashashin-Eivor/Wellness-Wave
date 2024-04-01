@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom CSS file link -->
+    <link rel="stylesheet" href="/styles/nav-footer.css">
+    <link rel="stylesheet" href="/styles/shop.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Shop</title>
+    <style>
+      /* loader */
+      .loader {
+          border: 16px solid #000000;
+          border-top: 16px solid #009E3C ;
+          border-radius: 50%;
+          width: 80px;
+          height: 80px;
+          animation: spin 2s linear infinite; 
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+      }
+
+      @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+      }
+  </style>
+</head>
+<body class="">
+    <!-- Header Start-->
+    <header class="nav">
+        <!-- logo -->
+        <div class="">
+            <a href="/html/home.html"><img src="/images/white-logo.png" alt="" height="50"></a>
+        </div>
+        <div>
+            <!-- Nav-Bar Start -->
+            <nav class="navbar">
+              <ul>
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a>
+                <li><a href="feedback.html" class="nav-link">Feedback</a></li>
+                <!-- Inside the <li> for Content Page -->
+                  <li class="dropdown" onmouseover="toggleDropdown(this)" onclick="toggleDropdown(this)">
+                    <div class="dropdown-container">
+                        <a href="#" class="nav-link dropbtn">Content Page <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content hidden"> <!-- Add 'hidden' class here -->
+                            <a href="content_page1.html">Student 1</a>
+                            <a href="content_page2.html">Student 2</a>
+                            <a href="content_page3.html">Student 3</a>
+                            <a href="content_page4.html">Student 4</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Inside the <li> for Page Editor -->
+                <li class="dropdown" onmouseover="toggleDropdown(this)" onclick="toggleDropdown(this)">
+                    <div class="dropdown-container">
+                        <a href="#" class="nav-link dropbtn">Page Editor <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content hidden"> <!-- Add 'hidden' class here -->
+                            <a href="page_editor1.html">Student 1</a>
+                            <a href="page_editor2.html">Student 2</a>
+                            <a href="page_editor3.html">Student 3</a>
+                            <a href="page_editor4.html">Student 4</a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="">
+            <ul class="nav-icon">
+                <li><a href="shop.html"><i class="icon fa fa-shopping-cart" style="font-size:24px"></i></a></li>
+                <li><a href="profile.html"><i class=" icon fa fa-user" style="font-size:24px"></i></a></li>
+            </ul>
+        </div>
+
+
+        </nav>
+        <!-- header End -->
+
+    </header>
+    <!-- Header End -->
+    <!-- Loader -->
+    <div id="loader" class="loader"></div>
+
+    <!-- Shop Start -->
+<div id="top-reach">SHOP</div>
+<div class="gallery">
+    <!-- organic tea -->
+    <div class="card">
+      <img src="/images/organic-tea.jpg" alt="">
+      <h3>Organic Tea</h3>
+      <p>£4.99</p>
+      <button onclick="addToBasket('organic tea', 4.99)" class="button-1">Add to Basket</button>
+      <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    </div>
+    <!-- protein bar -->
+    <div class="card">
+        <img src="/images/protein-bar.jpg" alt="">
+        <h3>Protein Bar</h3>
+        <p>£1.25</p>
+        <button onclick="addToBasket('protein bar', 1.25)" class="button-1">Add to Basket</button>
+        <select>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <!-- detox cleanse kit -->
+    <div class="card">
+        <img src="/images/detox-cleanse-kit.jpg" alt="" >
+        <h3>Detox Cleanse Kit</h3>
+        <p>£3.00</p>
+        <button onclick="addToBasket('detox cleanse kit', 3.00)" class="button-1">Add to Basket</button>
+        <select>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+   
+        </select>
+      </div>
+      <!-- Plant Based Snack -->
+    <div class="card">
+        <img src="/images/plant-based-snack.jpg" alt="">
+        <h3>Plant Based Snack</h3>
+        <p>£2.25</p>
+        <button onclick="addToBasket('plant based snack', 2.25)" class="button-1">Add to Basket</button>
+        <select>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <!-- Wellness journal -->
+    <div class="card">
+        <img src="/images/wellness-journal.jpg" alt="">
+        <h3>Wellness Journal</h3>
+        <p>£6.50</p>
+        <button onclick="addToBasket('wellness journal', 6.50)" class="button-1">Add to Basket</button>
+        <select>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <!-- Yoga mat -->
+    <div class="card">
+        <img src="/images/yoga-mat.jpg" alt="">
+        <h3>Yoga Mat</h3>
+        <p>£9.50</p>
+        <button onclick="addToBasket('yoga mat', 9.50)" class="button-1">Add to Basket</button>
+        <select>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+  </div>
+  
+  <!-- Basket -->
+  <div class="basket m-basket">
+    <h3 class="title">Basket</h3>
+    
+    <div id="basketItems"></div>
+    
+    <p class="a-right bold">Total: £<span id="total">0.00</span></p>
+
+    <!-- Clear Basket Button -->
+    <button class="clear-basket" onclick="clearBasket()">Clear Basket</button>
+
+    <div class="form-group">
+        <label class="form-label"><span class=""></span>Name:</label>
+        <input type="text" class="form-input" >
+      </div>
+
+      <div class="form-group">
+        <label class="form-label"><span class=""></span>Email:</label>
+        <input type="email" class="form-input" >
+      </div>
+      <div>
+        <input type="checkbox" id="express-delivery" name="express-delivery" />
+        <label class="font" for="express-delivery">Express Delivery</label>
+      </div>
+      <div class="a-right">
+        <button> <a href="/html/checkout.html" class="checkout-btn">Checkout</a></button>
+    </div>
+  </div>
+  <div>
+    <button><a class="button-1" href="#top-reach"> Back to Top</a></button>
+  </div>
+
+
+    <!-- Shop End -->
+    <!-- Footer start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">User Profile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Best Selling</h4>
+                    <ul>
+                        <li><a href="#">Wellness Journal</a></li>
+                        <li><a href="#">Organic Tea</a></li>
+                        <li><a href="#">Plant-based Snack</a></li>
+                        <li><a href="#">Detox and Cleanse Kit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">Protein Bar</a></li>
+                        <li><a href="#">Yoga Mat</a></li>
+                        <li><a href="#">Wellness Journal</a></li>
+                        <li><a href="#">Organic Tea</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Credential Text -->
+        <div class="footer-credentials">
+          <p>© 2024 WellnessWave Shop. All rights reserved.</p>
+        </div>
+  </footer>
+    <!-- footer end -->
+    <!-- js file integration -->
+    <script src="/js/nav-footer.js"></script>
+    <script src="/js/shop.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+
+.container1 {
+    max-width: 100%;
+    margin: 40px 120px 0px 120px ;
+    padding: 50px 50px 0px 50px;
+}
+
+header {
+    background-color: #009E3C ; /* Changed color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1, header p {
+    margin: 0;
+}
+
+.t-mg{
+    margin-top: 150px;
+}
+
+main {
+    padding: 20px 0;
+}
+
+h2{
+    font-size: 55px;
+    margin-bottom: 40px;
+}
+
+.jump-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2F4F4F; /* Changed color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: fit-content;
+    transition: background-color 0.3s ease;
+}
+
+.jump-link:hover {
+    background-color: #1E1E1E; /* Darker shade of gray on hover */
+}
+
+.task {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 30px 60px 30px 60px;
+    margin-bottom: 50px;
+}
+
+.task h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #000; 
+}
+
+.task p {
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+.task a {
+    color: #009E3C; 
+    text-decoration: none;
+}
+
+.task a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #000; /* Changed color */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.task {
+    background-color: #fff;
+    border-radius: 10px; /* Rounded corners for the task */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Box shadow for a lifted effect */
+    padding: 50px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.task:hover {
+    transform: translateY(-5px); /* Lift the task slightly on hover */
+}
+
+.task h3 {
+    margin-top: 0;
+    color: #2F4F4F; /* Heading color */
+    font-size: 24px; /* Increase font size for headings */
+}
+
+.task p {
+    /* Increase space between paragraphs */
+    color: #333; /* Body text color */
+}
+
+.task a {
+    color: #009E3C; /* Link color */
+    text-decoration: none;
+    font-weight: bold; /* Bold font for links */
+    display: inline-block; /* Make links block-level for better spacing */
+}
+
+.task a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+.reach-button{
+    background-color: #009E3C;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 40px;
+
+}
